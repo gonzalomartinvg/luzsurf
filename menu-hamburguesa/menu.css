@@ -1,0 +1,96 @@
+/* MENÚ HAMBURGUESA PARA MÓVIL*/
+
+/*Trabajamos el botón de tres líneas*/
+
+.bars-menu{ /*Es el contenedor del menú superior derecho con las tres líneas*/
+    width: 30px; /*Le decimos que tenga ancho de 30px*/
+    height: 30px; /*Le decimos que tenga alto de 30px*/
+    cursor: pointer; /*Le indicamos que al pasar el cursor por arriba se active la manito de clickeable*/
+    justify-self: end;
+}
+
+.bars-menu span{ /*Con los span estamos haciendo las líneas del menú hamburguesa*/
+    display: block; /*Los span, naturalmente no viene con propiedad en bloque, si no, en línea*/
+    width: 100%; /*Le indicamos que ocupe el 100% de su padre, es decir el ".bars-menu"*/
+    height: 2px; /*Cada línea va a tener 2px de alto*/
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    margin-top: 6px; /*Separamos a las líneas*/
+    transform-origin: 0px 100%; /*Hace que las líneas de los span se mantengan en su eje original al rotar*/
+    transition: all 600ms; /*Indicamos la velocidad de transición a su nueva posición*/
+
+}
+
+/*ACLARACIÓN JAVASCRIPT: Hasta el momento habíamos definido el contenedor del menú hamburguesa en ".bars-menu" y las 3 líneas con ".bars-menu span".
+Ahora, vamos a indicarle una animación. Para esto, generamos una clase específica que vamos a referenciar dsp en Javascript y que no esta nombrada
+en el html. Por ejemplo, acá las llamé igual que las clases que le dimos en html, pero agregandole ACTIVE adelante*/
+
+.active-line1-bars-menu{ /*A partir de acá le damos animación para que cuando clickeemos en el menú se convierta en una cruz*/
+    transform: rotate(45deg) translate(-2px, 1px); /*Le indicamos que la línea 1 rote 45 grados y que se translade hasta una posición que quede bien*/
+
+}
+
+.active-line3-bars-menu{ /*A partir de acá le damos animación para que cuando clickeemos en el menú se convierta en una cruz*/
+    transform: rotate(-45deg) translate(-4px, 2px); /*Le indicamos que la línea 3 rote -45 grados y que se translade hasta una posición que quede bien*/
+
+}
+
+.active-line2-bars-menu{ /*A partir de acá le damos animación para que cuando clickeemos en el menú se convierta en una cruz*/
+    opacity: 0; /*Le indicamos a la línea 2 que tenga una opacidad total tras la animación*/
+    margin-left: -30px; /*Indicamos que mientrás se haga opaco se mueva a la izquierda*/
+
+}
+
+/*A partir de ahora trabajamos el menú desplegable*/
+
+.main-nav {
+    position: fixed; /*Le decimos que el menú se mantenga fijo cuando la persona scrollea*/
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    margin-left: -100%;
+    transition: all 0.2s linear;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .main-nav.show {/*Esta clase es a la que vamos a llamar para hacer la interacción en JS*/
+    margin-left: 0;
+  }
+
+  .nav-links {
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .link-item {
+    margin-top: 2rem;
+    color: #444444;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    font-family: 'Gotham', sans-serif;
+  }
+
+  /*PARA QUE SE VEA BIEN EN ORDENADOR*/
+
+  @media screen and (min-width: 768px) {
+  .bars-menu {
+    display: none;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+}

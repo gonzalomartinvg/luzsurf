@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luz Surf</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="menu-hamburguesa/menu.css">
+</head>
+
+<body>
+
+    <div class="fondo">
+
+        <div class="navbar">
+
+            <div class="botonera">
+                <a href="" class="link-navbar bold">Gimnasio del surf</a>
+                <a href="" class="link-navbar bold">Surf trip</a>
+                <a href="" class="link-navbar bold">Contacto</a>
+                <span class="barrita"></span>
+            </div>
+    
+        </div>
+
+        <div class="contenedor-slogan">
+            <p class="texto1">Lo hacemos entre todos</p>
+            <div class="contenedor-logo">
+                <img class="logo" src="images/luz surf_final-08.png" alt="logo luz surf">
+            </div>
+            
+        </div>
+        
+
+        <!-- Comienza Menú hamburguesa para móvil -->
+         
+        <div id="bars-menu" class="bars-menu">
+            <span class="line1-bars-menu"></span>
+            <span class="line2-bars-menu"></span>
+            <span class="line3-bars-menu"></span>
+        </div>
+
+        <nav id="nav" class="main-nav">
+        <div class="nav-links">
+            <a class="link-item" href="">Gimnasio del surf</a>
+            <a class="link-item" href="">Surf trip</a>
+            <a class="link-item" href="">Contacto</a>
+        </div>
+        </nav>
+
+        <!-- Finaliza Menú hamburguesa para móvil -->
+
+    </div>
+
+    <div class="body-introduccion">
+
+        <p class="color-terciary">Disfrutá de Surf Trips en Brasil</p>
+        <h1>Aprendé y mejorá tu surf divirtiéndote</h1>
+        <p class="color-secondary">Entrená surf en pileta en La Plata</p>
+
+    </div>
+
+    <div class="planes-virtuales">
+
+        <div class="informacion animation" data-animation="show">
+            <h2 class="extra-bold">Surf trips en Brasil</h2> 
+            <img class="imagen-titulo-producto" src="images/ola.png" alt="">
+
+            <div class="texto-principal-info">
+                <p>Disfrutá del surf en el paraíso escondido de Praia do Luz (Brasil)</p>
+                <p class="bold">Compartí un viaje único con personas que están en tu misma onda.</p>
+                <p>Incluye traslado, hospedaje, todas las comidas, equipamento, clases de surf y fotos.</p>
+            </div>
+
+            <button class="button button-plan-virtual">Conocé más</button>
+
+        </div>
+
+        <div class="informacion animation" data-animation="show">
+            <h2 class="extra-bold">Entrená surf en La Plata</h2>
+            <img class="imagen-titulo-producto" src="images/tabla.png" alt="">
+
+            <div class="texto-principal-info">
+                <p>Ahora podés entrenar surf en pileta en La Plata. <span class="bold">Mejorá tu salud física y mental con un entrenamiento distinto, mientrás conocés personas a las que le gusta lo mismo que a vos.</span> </p>
+                <p>No importa tu edad y no hace falta que tengas experiencia previa. Vení a disfrutar y aprender surf</p>
+            </div>
+
+            <button class="button button-plan-virtual">Conocé más</button>
+
+        </div>
+    </div>
+
+    <div class="body-introduccion">
+
+        <p class="color-terciary">Mejorá tu salud física y mental</p>
+        <h1>Clases de surf en pileta</h1>
+        <p class="color-secondary">Aprendé divirtiéndote</p>
+
+    </div>
+
+    <div class="elegir-tipo-de-plan animation" data-animation="show">
+
+        <div class="botones-de-planes">
+            <button class="anual button-tipo-de-plan">Mensual</button>
+            <button class="mensual button-tipo-de-plan-inactive">Anual (20% de descuento)</button>
+        </div>
+
+        <div class="tarjetas-planes">
+
+            <div class="tarjeta tarjeta1">
+
+                <div class="titulos-tarjetas">
+                    <p class="titulo-1">Pack Premium</p>
+                    <p class="precio precioPresencial"></p> <!--El precio se genera desde JavaScript para que sea fácil editarlo-->
+                    <p class="bajada">Ideal para practicar todas las semanas</p>
+                </div>
+
+                <div class="button-tarjetas-contenedor">
+                    <button class="button button-tarjetas">Comprar</button>
+                </div>
+
+                <div class="listado-tarjetas-contenedor">
+
+                    <div class="elemento-lista-tarjeta">
+                        <img class="tilde" src="images/tilde.png" alt="tilde">
+                        <p>4 clases de surf en pileta al mes</p>
+                    </div>
+
+                    <div class="elemento-lista-tarjeta">
+                        <img class="tilde" src="images/tilde.png" alt="tilde">
+                        <p>Incluye equipamiento</p>
+                    </div>
+
+                    <div class="elemento-lista-tarjeta">
+                        <img class="tilde" src="images/tilde.png" alt="tilde">
+                        <p>Trabajo de fuerza, velocidad y flexibilidad</p>
+                    </div>
+
+                    <div class="elemento-lista-tarjeta">
+                        <img class="tilde" src="images/tilde.png" alt="tilde">
+                        <p>Asesoría de mejora</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="tarjeta tarjeta2">
+
+                <div class="titulos-tarjetas">
+                    <p class="titulo-1">Pack regular</p>
+                    <p class="precio precioVirtual"></p><!--El precio se genera desde JavaScript para que sea fácil editarlo-->
+                    <p class="bajada">Ideal para practicar aisladamente</p>
+                </div>
+
+                <div class="button-tarjetas-contenedor">
+                    <button class="button button-tarjetas">Comprar</button>
+                </div>
+
+                <div class="listado-tarjetas-contenedor">
+
+                    <div class="elemento-lista-tarjeta">
+                        <img class="tilde" src="images/tilde.png" alt="tilde">
+                        <p>1 clase de surf en pileta al mes</p>
+                    </div>
+
+                    <div class="elemento-lista-tarjeta">
+                        <img class="tilde" src="images/tilde.png" alt="tilde">
+                        <p>Incluye equipamiento</p>
+                    </div>
+
+                    <div class="elemento-lista-tarjeta">
+                        <img class="tilde" src="images/tilde.png" alt="tilde">
+                        <p>Trabajo de fuerza, velocidad y flexibilidad</p>
+                    </div>
+
+                    <div class="elemento-lista-tarjeta">
+                        <img class="tilde" src="images/tilde.png" alt="tilde">
+                        <p>Asesoría de mejora</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="body-introduccion">
+
+        <p class="color-terciary">Conocé personas que están en tu misma onda</p>
+        <h1>Bienvenido a nuestros Surf trips</h1>
+        <p class="color-secondary">Disfrutá de Praia da Rosa (Brasil)</p>
+
+    </div>
+
+    <div class="ventajas">
+
+        <div class="beneficios">
+
+            <div class="beneficio-especifico activo">
+
+                <span class="barra-beneficio-activate"></span>
+
+                <div class="texto-beneficio texto-beneficio-activate">
+                    <h2 class="titulo-beneficio">Disfrutá y hace amigos en un paraíso escondido</h2>
+                    <p class="texto-beneficio">En la idílica Paraia do Luz, en Santa Catarina, Brasil, se esconde un paraíso para los amantes del surf y la naturaleza. Acá, la brisa marina y las olas crean un escenario perfecto para conectar con el océano y la tierra. Sumergite en esta hermosa playa y disfruta del surf con amigos.</p>
+                </div>
+
+            </div>
+
+            <div class="beneficio-especifico">
+
+                <span class="barra-beneficio"></span>
+
+                <div class="texto-beneficio texto-beneficio-inactive">
+                    <h2 class="titulo-beneficio">Tendrás asesoramiento profesional diario</h2>
+                    <p class="texto-beneficio">
+                        En cada fase de tu experiencia de surf, contarás con un instructor dedicado que se ocupará de realizar un seguimiento detallado de tu progreso. De manera personalizada, te guiará para que puedas mejorar día a día y disfrutar al máximo de la experiencia.</p>
+                </div>
+                
+            </div>
+
+            <div class="beneficio-especifico">
+
+                <span class="barra-beneficio"></span>
+
+                <div class="texto-beneficio texto-beneficio-inactive">
+                    <h2 class="titulo-beneficio">Deleitate con comida artesanal totalmente incluida</h2>
+                    <p class="texto-beneficio"> Entendemos la importancia de una alimentación adecuada para sentirte bien con vos mismo y disfrutar al máximo del surf. Por esto, el pack incluye tres comidas diarias completamente artesanales, diseñadas para nutrir tu cuerpo y ayudarte a alcanzar tu máximo potencial.</p>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <img class="imagen-beneficios animation" src="images/imagen-beneficios.png" alt="" data-animation="show">
+    </div>
+
+    <div class="elegir-tipo-de-plan animation" data-animation="show">
+
+        <div class="botones-de-planes">
+            <button class="anual button-tipo-de-plan">Anual (20% de descuento)</button>
+            <button class="mensual button-tipo-de-plan-inactive">Mensual</button>
+        </div>
+
+        <div class="tarjetas-planes">
+
+            <div class="tarjeta tarjeta1">
+
+                <div class="titulos-tarjetas">
+                    <p class="titulo-1">Plan presencial</p>
+                    <p class="precio precioPresencial">$2000</p> <!--El precio se genera desde JavaScript para que sea fácil editarlo-->
+                    <p class="bajada">Ideal si vivís en la playa</p>
+                </div>
+
+                <div class="button-tarjetas-contenedor">
+                    <button class="button button-tarjetas">Comprar</button>
+                </div>
+
+                <div class="listado-tarjetas-contenedor">
+
+                    <div class="elemento-lista-tarjeta">
+                        <img class="tilde" src="images/tilde.png" alt="tilde">
+                        <p>8 clases de surf al mes</p>
+                    </div>
+
+                    <div class="elemento-lista-tarjeta">
+                        <img class="tilde" src="images/tilde.png" alt="tilde">
+                        <p>Traje y tabla incluidos</p>
+                    </div>
+
+                    <div class="elemento-lista-tarjeta">
+                        <img class="tilde" src="images/tilde.png" alt="tilde">
+                        <p>Fotos y videos</p>
+                    </div>
+
+                    <div class="elemento-lista-tarjeta">
+                        <img class="tilde" src="images/tilde.png" alt="tilde">
+                        <p>Asesoría de mejora</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="tarjeta tarjeta2">
+
+                <div class="titulos-tarjetas">
+                    <p class="titulo-1">Plan virtual</p>
+                    <p class="precio precioVirtual">$3000</p><!--El precio se genera desde JavaScript para que sea fácil editarlo-->
+                    <p class="bajada">Ideal si no vivís en la playa</p>
+                </div>
+
+                <div class="button-tarjetas-contenedor">
+                    <button class="button button-tarjetas">Comprar</button>
+                </div>
+
+                <div class="listado-tarjetas-contenedor">
+
+                    <div class="elemento-lista-tarjeta">
+                        <img class="tilde" src="images/tilde.png" alt="tilde">
+                        <p>8 videoclases al mes</p>
+                    </div>
+
+                    <div class="elemento-lista-tarjeta">
+                        <img class="tilde" src="images/tilde.png" alt="tilde">
+                        <p>Material técnico-visual</p>
+                    </div>
+
+                    <div class="elemento-lista-tarjeta">
+                        <img class="tilde" src="images/tilde.png" alt="tilde">
+                        <p>Introducción al surfskate</p>
+                    </div>
+
+                    <div class="elemento-lista-tarjeta">
+                        <img class="tilde" src="images/tilde.png" alt="tilde">
+                        <p>Asesoría de mejora</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="footer">
+
+        <div class="titulo-footer">
+            <p>Empezá hoy</p>
+            <h1>Estás a un paso de cumplir tu sueño</h1>
+        </div>
+
+        <button class="button button-elegir-plan">Elegir plan</button>
+       
+        <div class="footer-contacto">
+
+            <p class="nombre-marca-footer">Clínica SurfLong</p>
+
+            <div class="contacto">
+                <p>Instagram</p>
+                <p>Contacto</p>
+            </div>
+
+            <img class="logo" src="images/luz surf_final-08.png" alt="logo luz surf">
+
+        </div>
+
+    </div>
+
+    <script src="js.js"></script>
+    <script src="menu-hamburguesa/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,440 @@
+:root{
+
+    /*Generales*/
+
+    --blanco-1: #ffff;
+    --blanco-2: #ebeada;
+    --blanco-3: #f5f5f5;
+    --gris-1: #d6d4d4;
+    --gris-2: #232020;
+    --gris-3: #636262;
+    --black: #000000;
+
+
+    /*Identidad visual de caro*/
+
+    --primary-color: #00427a;
+    --secondary-color: #1f74c0;
+    --color-alternativo-1:#7c7a18;
+    --color-alternativo-2:#d72c82;
+    --color-alternativo-3:#bfa7d0;
+    --color-alternativo-3:#dc4100;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Rethink Sans", sans-serif;
+    font-display: swap;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.extra-bold{
+    font-weight: 800;
+}
+
+.color-secondary{
+    color: var(--secondary-color);
+}
+
+.color-terciary{
+    color: var(--color-alternativo-3);
+}
+
+.button{
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--secondary-color);
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 800;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.fondo{
+    width:100%;
+    background-color: var(--primary-color);
+    display: flex;
+    padding: 1rem;
+    grid-gap: 1rem;
+    justify-content: end;
+    align-items: center;
+    color: var(--blanco-1);
+}
+
+.contenedor-slogan{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: end;
+
+}
+
+
+
+@media (max-width: 768px) {
+    .texto1{
+        font-size: 0.8rem;
+    }
+    .texto2{
+        display: none;
+    }
+  }
+
+.navbar{
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+      display: none;
+    }
+  }
+
+.logo{
+    width: 3.5rem;
+}
+
+.botonera{
+    display: flex;
+    grid-gap: 2rem;
+}
+
+.link-navbar{
+    text-decoration: none;
+    color: var(--blanco-1);
+}
+
+.barrita{
+    width: 0.1rem;
+    background-color: var(--gris-1);
+}
+
+.body-introduccion{
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+    text-align: center;
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.reserva-y-ver-video{
+    width: 100%;
+    margin: auto;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    display: grid;
+    grid-gap: 0.8rem;
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 11rem));
+    justify-content: center;
+    justify-items: center;
+    
+}
+
+.imagen-principal{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+
+    position: absolute;
+    top: 25;
+    z-index: -1;
+}
+
+.imagen-titulo-producto{
+    width: 5rem;
+}
+.texto-principal-info{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.planes-virtuales{
+    width: 100%;
+    margin: auto;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    align-items: center;
+    grid-gap: 1rem;
+   
+    background-image: url('images/posando-surf-negro.jpg');
+    background-size: cover; /* Esto ajusta la imagen para que cubra todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    
+}
+
+.informacion{
+    width: 70%;
+    display: grid;
+    grid-gap: 0.9rem;
+    text-align: center;
+    justify-self: center;
+    justify-items: center;
+    color: var(--blanco-1);
+}
+
+.imagen-monitor{
+    width: 90%;
+    margin: auto;
+}
+
+.elegir-tipo-de-plan{
+    width: 100%;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.botones-de-planes{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    grid-gap: 0.5rem;
+    justify-content: center;
+}
+
+.button-tipo-de-plan{
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--blanco-1);
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    color: var(--terciary-color);
+    border: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    box-shadow: 2px 2px 1px 1px rgba(158, 157, 157, 0.2);
+    cursor: pointer;
+}
+
+.button-tipo-de-plan-inactive{
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--blanco-1);
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    color: var(--gris-1);
+    border: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.tarjetas-planes{
+    width: 90%;
+    margin: auto;
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 20rem));
+    justify-content: center;
+    grid-gap: 1.5rem;
+}
+
+.tarjeta{
+    width: 100%;
+    margin: auto;
+    background-color: var(--blanco-1);
+    box-shadow: 2px 2px 1px 1px rgba(158, 157, 157, 0.2);
+    border-radius: 0.8rem;
+    padding: 1.5rem;
+    display: grid;
+    grid-gap: 1.5rem;
+    justify-items: center;
+}
+
+.titulos-tarjetas{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-gap: 0.5rem;
+}
+
+.titulo-1{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.precio{
+    font-size: 2.8rem;
+    font-weight: 800;
+}
+
+.bajada{
+    font-size: 1.2rem;
+}
+
+.listado-tarjetas-contenedor{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.elemento-lista-tarjeta{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    grid-gap: 0.5rem;
+}
+
+.tilde{
+    width: 1.2rem;
+}
+
+
+.ventajas{
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    justify-content: center;
+    align-items: center;
+    grid-gap: 1rem;
+}
+
+.beneficios{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.beneficio-especifico{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    grid-gap: 1rem;
+    cursor: pointer;
+}
+
+.texto-beneficio-inactive{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-gap: 1rem;
+    color: var(--gris-3);
+}
+
+.texto-beneficio-activate{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.barra-beneficio{
+    width: 0.3rem;
+    background-color: var(--blanco-1);
+}
+
+.barra-beneficio-activate{
+    width: 0.3rem;
+    background-color: var(--secondary-color);
+}
+
+.imagen-beneficios{
+    width: 90%;
+}
+
+.footer{
+    width: 100%;
+    background-color: var(--gris-2);
+    margin-top: 2rem;
+    padding: 2rem;
+    display: grid;
+    grid-gap: 1.5rem;
+}
+
+.titulo-footer{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    color: var(--blanco-1);
+    text-align: center;
+    grid-gap: 1rem;
+}
+
+.button-elegir-plan{
+    justify-self: center;
+}
+
+.footer-contacto{
+    width: 100%;
+    margin: auto;
+    color: var(--blanco-1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nombre-marca-footer{
+    width: 100%;
+    margin: auto;
+}
+
+.contacto{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    grid-gap: 1rem;
+}
+
+.imagen-footer{
+    width: 10%;
+}
+
+/* ANIMACIONES */
+
+[data-animation="fade"]{
+    opacity: 0;
+    transform: translate(100%);
+    transition: .6s ease-in .3s;
+
+    --opacity: 1;
+    --transform: translate(0);
+}
+
+[data-animation="show"]{
+    opacity: 0;
+    transform: scale(0);
+    transition: .6s ease-in .3s;
+
+    --opacity: 1;
+    --transform: scale(1);
+}
+
+[data-animation="up"]{
+    opacity: 0;
+    transform: translateY(100%);
+    transition: .6s ease-in .3s;
+
+    --opacity: 1;
+    --transform: translateY(0);
+}
+
+.unset{
+    opacity: var(--opacity);
+    transform: var(--transform);
+}
