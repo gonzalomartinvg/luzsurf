@@ -13,7 +13,7 @@
     display: block; /*Los span, naturalmente no viene con propiedad en bloque, si no, en línea*/
     width: 100%; /*Le indicamos que ocupe el 100% de su padre, es decir el ".bars-menu"*/
     height: 2px; /*Cada línea va a tener 2px de alto*/
-    background-color: var(--secondary-color);
+    background-color: var(--blanco-1);
     border-radius: 10px;
     margin-top: 6px; /*Separamos a las líneas*/
     transform-origin: 0px 100%; /*Hace que las líneas de los span se mantengan en su eje original al rotar*/

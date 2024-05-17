@@ -81,11 +81,15 @@
 
 }
 
-
+@media (max-width: 768px) {
+    .contenedor-slogan{
+        justify-content: start;
+    }
+  }
 
 @media (max-width: 768px) {
     .texto1{
-        font-size: 0.8rem;
+        display: none;
     }
     .texto2{
         display: none;
@@ -193,6 +197,13 @@
     justify-self: center;
     justify-items: center;
     color: var(--blanco-1);
+}
+
+
+@media (max-width: 768px) {
+    .informacion{
+        width: 90%;
+    }
 }
 
 .imagen-monitor{
